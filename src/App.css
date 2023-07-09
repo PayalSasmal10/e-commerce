@@ -1,3 +1,9 @@
+:root {
+    --sky-color: rgb(182, 247, 247);
+    --white: #fff;
+    --black:rgb(116, 129, 141);
+    --font-family: 'Itim', cursive;
+}
 .App {
-  /* display: flex; */
+  display: flex;
 }

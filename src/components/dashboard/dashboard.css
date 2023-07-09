@@ -1,4 +1,37 @@
 .dashboard{
     width: 70%;
-    display: inline-block;
+    /* display: inline-block; */
+    margin-left: 20px;
+}
+.dashboard h1{
+    /* marg */
+}
+
+.sales{
+    display: flex;
+    color: var(--black);
+    font-family: var(--font-family);
+    /* margin-left: 20px; */
+    /* justify-content: center; */
+}
+.totalCards{
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+    min-height: 90px;
+    width: 10vw;
+    border-radius: 5px;
+    margin: 7px;
+}
+
+.totalsales{
+    background-color: var(--sky-color);
+}
+
+.totalearnings{
+    background-color: rgb(237, 237, 167);
+}
+
+.totalorders{
+    background-color: rgb(231, 210, 251);
 }

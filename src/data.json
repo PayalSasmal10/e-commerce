@@ -1,0 +1,23 @@
+[
+    {
+        "productname" : "Nike Revolution 3",
+        "price": "$250",
+        "orders": "47",
+        "stock": "23",
+        "amount": "$12560"
+    },
+    {
+        "productname" : "Green Plain T-Shirt",
+        "price": "$79",
+        "orders": "98",
+        "stock": "07",
+        "amount": "$2368"
+    },
+    {
+        "productname" : "Nike Dunk Shoes",
+        "price": "$579",
+        "orders": "26",
+        "stock": "03",
+        "amount": "$36987"
+    }
+]
