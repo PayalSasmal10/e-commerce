@@ -5,7 +5,7 @@ import partypopper from "../../assets/images/partypopper.svg";
 const SideNav = () => {
   return (
     <div className="side-nav">
-      <h1 className="companyname">E-Com</h1>
+      <h1 className="companyname">E.COM</h1>
       <div className="firstCard">
         <p>Dashboard</p>
         <p>Products</p>

@@ -1,0 +1,22 @@
+th, td{
+    border: none;
+    /* padding: none; */
+}
+.tableCard {
+    width: 635px;
+    background-color: var(--card);
+}
+
+.table {
+    width: 100%;
+}
+
+.tableheader{
+    background-color: var(--cardBackground);
+}
+
+.imageURL {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(178, 178, 243);
+}

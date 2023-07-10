@@ -3,6 +3,8 @@
     --white: #fff;
     --black:rgb(116, 129, 141);
     --font-family: 'Itim', cursive;
+    --card: rgb(28, 24, 24);
+    --cardBackground: rgb(43, 39, 39)
 }
 .App {
   display: flex;

@@ -1,0 +1,12 @@
+.analyticsCard {
+    background-color: var(--card);
+    width: 635px;
+    /* height: 300px; */
+    border-radius: 5px;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+/* .lineChart{
+    padding-top: ;
+} */

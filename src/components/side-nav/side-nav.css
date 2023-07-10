@@ -1,14 +1,13 @@
 .side-nav {
-    background-color: rgb(28, 24, 24);
+    background-color: var(--card);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     min-width: 230px;
-    /* width: 17vw; */
     height: 100vh;
     font-family: var(--font-family);
 }
 
 .companyname {
-    padding: 20px 0px 0px 50px;
+    padding: 2px 0px 0px 50px;
     cursor: pointer;
     color: var(--sky-color);
 }
@@ -16,7 +15,7 @@
 .firstCard {
     padding: 20px 0px 0px 50px;
     margin-bottom: 250px;
-    color: rgb(116, 129, 141);
+    color: var(--black);
 }
 
 .firstCard, p {
@@ -30,8 +29,8 @@
     height: 26vh;
     padding: 15px 0px 20px 25px;
     align-items: center;
-    background-color: rgb(43, 39, 39);
-    color: rgb(116, 129, 141);
+    background-color: var(--cardBackground);
+    color: var(--black);
 }
 
 /* .secondCardDown{

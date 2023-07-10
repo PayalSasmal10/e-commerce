@@ -1,23 +1,90 @@
 [
-    {
+    {   
+        "id": "1",
         "productname" : "Nike Revolution 3",
         "price": "$250",
         "orders": "47",
         "stock": "23",
-        "amount": "$12560"
+        "amount": "32560",
+        "imageURL": "https://static.nike.com/a/images/t_default/2cb90540-ae37-4b31-90ad-640987e21a6b/pegasus-40-road-running-shoes-0Z9lqN.png",
+        "month": "Jan",
+        "payment": "Online"
     },
     {
+        "id": "2",
         "productname" : "Green Plain T-Shirt",
         "price": "$79",
         "orders": "98",
         "stock": "07",
-        "amount": "$2368"
+        "amount": "2368",
+        "imageURL": "https://www.mydesignation.com/wp-content/uploads/2020/01/parrot-green-plain-tshirt-mydesignation-unisex-image.jpg",
+        "month": "Feb",
+        "payment": "Online"
     },
     {
+        "id": "3",
         "productname" : "Nike Dunk Shoes",
         "price": "$579",
         "orders": "26",
         "stock": "03",
-        "amount": "$36987"
+        "amount": "26987",
+        "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
+        "month": "Mar",
+        "payment": "Online"
+    },
+    {
+        "id": "4",
+        "productname" : "Blue T-Shirt",
+        "price": "$579",
+        "orders": "26",
+        "stock": "03",
+        "amount": "36987",
+        "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
+        "month": "Apr",
+        "payment": "Online"
+    },
+    {
+        "id": "5",
+        "productname" : "Orange Hat",
+        "price": "$59",
+        "orders": "6",
+        "stock": "03",
+        "amount": "36987",
+        "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
+        "month": "May",
+        "payment": "Store Order"
+    },
+    {
+        "id": "6",
+        "productname" : "Green Trousers",
+        "price": "$179",
+        "orders": "16",
+        "stock": "01",
+        "amount": "36987",
+        "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
+        "month": "Jun",
+        "payment": "Store Order"
+    },
+    {
+        "id": "7",
+        "productname" : "Green Trousers",
+        "price": "$179",
+        "orders": "16",
+        "stock": "01",
+        "amount": "36987",
+        "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
+        "month": "July",
+        "payment": "Store Order"
+    },
+    {
+        "id": "8",
+        "productname" : "Green Trousers",
+        "price": "$179",
+        "orders": "16",
+        "stock": "01",
+        "amount": "36987",
+        "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
+        "month": "Aug",
+        "payment": "Online"
     }
 ]
