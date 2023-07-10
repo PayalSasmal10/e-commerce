@@ -1,7 +1,8 @@
 .moodeOfCardORder{
     display: flex;
     background-color: var(--card);
-    width: 595px;
+    /* max-width: 82%; */
+    width: 92%;
     height: 314px;
     border-radius: 5px;
     margin: 84px 30px 0px 0px;

@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import DATA from "../../data.json";
+import React from "react";
 import "./topProducts.css";
 
-export const TopProducts = () => {
-  const [items] = useState(DATA);
-
+export const TopProducts = ({ items }) => {
   return (
     <div className="tableCard">
       <h5>Top Selling Products</h5>
@@ -20,15 +17,24 @@ export const TopProducts = () => {
         </thead>
         <tbody>
           {items.map((val, id) => {
-            return (
-              <tr key={id}>
-                <td><img className="imageURL" src={val.imageURL} alt="productImges"/><span>{val.productname}</span></td>
-                <td>{val.price}</td>
-                <td>{val.orders}</td>
-                <td>{val.stock}</td>
-                <td>{val.amount}</td>
-              </tr>
-            );
+            if (val.orders > 20) {
+              return (
+                <tr key={id}>
+                  <td>
+                    <img
+                      className="imageURL"
+                      src={val.imageURL}
+                      alt="productImges"
+                    />
+                    <span>{val.productname}</span>
+                  </td>
+                  <td>{val.price}</td>
+                  <td>{val.orders}</td>
+                  <td>{val.stock}</td>
+                  <td>${val.amount}</td>
+                </tr>
+              );
+            }
           })}
         </tbody>
       </table>

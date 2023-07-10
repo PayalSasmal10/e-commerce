@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Pie } from "react-chartjs-2";
 import DATA from "../../data.json";
 import "./modeofOrders.css";
+import { RecentOrders } from "./recentOrders";
 
 export const ModeOfOrder = () => {
   Chart.register(CategoryScale);
@@ -25,21 +26,25 @@ export const ModeOfOrder = () => {
     ],
   });
   return (
-    <div className="moodeOfCardORder">
-      <h4>Mode of Order</h4>
-      <div>
-        <Pie
-          data={paymentData}
-          options={{
-            plugins: {
-              title: {
-                display: true,
-                text: "",
+    <div className="orderCards">
+      <div className="moodeOfCardORder">
+        <h4>Mode of Order</h4>
+        <div>
+          <Pie
+            data={paymentData}
+            options={{
+              plugins: {
+                title: {
+                  display: true,
+                  text: "",
+                },
               },
-            },
-          }}
-        />
+            }}
+          />
+        </div>
       </div>
+
+      <RecentOrders />
     </div>
   );
 };

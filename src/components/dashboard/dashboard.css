@@ -3,9 +3,7 @@
     /* display: inline-block; */
     margin-left: 20px;
 }
-.dashboard h1{
-    /* marg */
-}
+
 
 .sales{
     display: flex;
@@ -26,6 +24,7 @@
 
 .totalsales{
     background-color: var(--sky-color);
+    /* display: inline-block; */
 }
 
 .totalearnings{

@@ -8,7 +8,8 @@
         "amount": "32560",
         "imageURL": "https://static.nike.com/a/images/t_default/2cb90540-ae37-4b31-90ad-640987e21a6b/pegasus-40-road-running-shoes-0Z9lqN.png",
         "month": "Jan",
-        "payment": "Online"
+        "payment": "Online",
+        "Date": "12-01-2023"
     },
     {
         "id": "2",
@@ -19,7 +20,8 @@
         "amount": "2368",
         "imageURL": "https://www.mydesignation.com/wp-content/uploads/2020/01/parrot-green-plain-tshirt-mydesignation-unisex-image.jpg",
         "month": "Feb",
-        "payment": "Online"
+        "payment": "Online",
+        "Date": "13-01-2023"
     },
     {
         "id": "3",
@@ -30,18 +32,20 @@
         "amount": "26987",
         "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
         "month": "Mar",
-        "payment": "Online"
+        "payment": "Online",
+        "Date": "14-01-2023"
     },
     {
         "id": "4",
         "productname" : "Blue T-Shirt",
         "price": "$579",
-        "orders": "26",
+        "orders": "20",
         "stock": "03",
         "amount": "36987",
         "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
         "month": "Apr",
-        "payment": "Online"
+        "payment": "Online",
+        "Date": "25-01-2023"
     },
     {
         "id": "5",
@@ -52,7 +56,8 @@
         "amount": "36987",
         "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
         "month": "May",
-        "payment": "Store Order"
+        "payment": "Store Order",
+        "Date": "26-01-2023"
     },
     {
         "id": "6",
@@ -63,7 +68,8 @@
         "amount": "36987",
         "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
         "month": "Jun",
-        "payment": "Store Order"
+        "payment": "Store Order",
+        "Date": "28-01-2023"
     },
     {
         "id": "7",
@@ -74,7 +80,8 @@
         "amount": "36987",
         "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
         "month": "July",
-        "payment": "Store Order"
+        "payment": "Store Order",
+        "Date": "29-01-2023"
     },
     {
         "id": "8",
@@ -85,6 +92,7 @@
         "amount": "36987",
         "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
         "month": "Aug",
-        "payment": "Online"
+        "payment": "Online",
+        "Date": "28-01-2023"
     }
 ]

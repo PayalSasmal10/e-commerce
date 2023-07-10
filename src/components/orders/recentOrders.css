@@ -1,0 +1,10 @@
+.recentOrderCard {
+    width: 92%;
+    background-color: var(--card);
+    /* width: 635px; */
+    height: 314px;
+    border-radius: 5px;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    margin-top: 28px;
+}
