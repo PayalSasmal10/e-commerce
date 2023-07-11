@@ -3,7 +3,8 @@ th, td{
     /* padding: none; */
 }
 .tableCard {
-    width: 635px;
+    margin: 0.8rem 0;
+    padding: 0.2rem;
     background-color: var(--card);
 }
 

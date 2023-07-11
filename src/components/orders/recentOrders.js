@@ -19,16 +19,20 @@ export const RecentOrders = () => {
             <h4>Recent Orders</h4>
             <div className="tableData">
                 <table>
-                    {/* <thead><td>Recent Orders</td></thead> */}
-                    <tbody className="">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
                     {items.map((val, id) => (
-                        
                         <tr key={id}>
                         <td>
                         <img
-                        className="imageURL"
-                        src={val.imageURL}
-                        alt="productImges"
+                            className="imageURL"
+                            src={val.imageURL}
+                            alt="productImges"
                         />
                        <span>{val.productname}</span>
                        </td>

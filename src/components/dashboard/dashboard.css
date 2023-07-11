@@ -1,25 +1,24 @@
 .dashboard{
-    width: 45%;
-    /* display: inline-block; */
+    width: 50%;
     margin-left: 20px;
 }
-
 
 .sales{
     display: flex;
     color: var(--black);
     font-family: var(--font-family);
-    /* margin-left: 20px; */
-    /* justify-content: center; */
+    margin-bottom: 0.5rem;
 }
+
 .totalCards{
     display: flex;
     justify-content: center;
-    min-width: 200px;
-    min-height: 90px;
+    min-width: calc(33% - 25px);
+    /* min-height: 90px; */
     width: 10vw;
     border-radius: 5px;
-    margin: 7px;
+    margin: 5px;
+    padding: 10px;
 }
 
 .totalsales{

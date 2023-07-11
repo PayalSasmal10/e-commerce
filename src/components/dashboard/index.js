@@ -37,15 +37,15 @@ const Dashboard = () => {
       <h1>Dashboard</h1>
       <div className="sales">
         <div className="totalCards totalsales">
-          <p>📈 TOTAL SALES</p>
+          <p className="val">📈 TOTAL SALES</p>
           <span className="">${totalSales}</span>
         </div>
         <div className="totalCards totalearnings">
-          <p>💰TOTAL EARNINGS</p>
+          <p className="val">💰TOTAL EARNINGS</p>
           <span className="">${totalEarnings}</span>
         </div>
         <div className="totalCards totalorders">
-          <p>🛒TOTAL ORDERS</p>
+          <p className="val">🛒TOTAL ORDERS</p>
           <span className="">{totalOrders} k</span>
         </div>
       </div>
