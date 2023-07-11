@@ -1,6 +1,6 @@
 .dashboard{
     width: 50%;
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 .sales{
@@ -8,10 +8,11 @@
     color: var(--black);
     font-family: var(--font-family);
     margin-bottom: 0.5rem;
+    margin-top: -1rem;
 }
 
 .totalCards{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     min-width: calc(33% - 25px);
     /* min-height: 90px; */
@@ -26,6 +27,13 @@
     /* display: inline-block; */
 }
 
+.totalCards span:last-child{
+    padding-top: 5px;
+}
+
+.totals{
+    padding-top: 0.5rem;
+}
 .totalearnings{
     background-color: rgb(237, 237, 167);
 }

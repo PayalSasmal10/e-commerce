@@ -37,16 +37,19 @@ const Dashboard = () => {
       <h1>Dashboard</h1>
       <div className="sales">
         <div className="totalCards totalsales">
-          <p className="val">📈 TOTAL SALES</p>
-          <span className="">${totalSales}</span>
+          <span>📈 TOTAL SALES</span>
+          <br />
+          <span>${totalSales}</span>
         </div>
         <div className="totalCards totalearnings">
-          <p className="val">💰TOTAL EARNINGS</p>
-          <span className="">${totalEarnings}</span>
+          <span>💰TOTAL EARNINGS</span>
+          <br />
+          <span>${totalEarnings}</span>
         </div>
         <div className="totalCards totalorders">
-          <p className="val">🛒TOTAL ORDERS</p>
-          <span className="">{totalOrders} k</span>
+          <span>🛒TOTAL ORDERS</span>
+          <br />
+          <span>{totalOrders} k</span>
         </div>
       </div>
       <AnalysticsEarning />
