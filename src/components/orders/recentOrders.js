@@ -13,7 +13,7 @@ export const RecentOrders = () => {
             return new Date(a.date) - new Date(b.date);
         });
         setItems(newItems.slice(0,6));
-    });
+    }, []);
     return(
         <div className="recentOrderCard">
             <h4>Recent Orders</h4>
