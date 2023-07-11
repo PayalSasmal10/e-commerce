@@ -1,43 +1,74 @@
 .side-nav {
-    background-color: var(--card);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /* min-width: 230px; */
-    width: 20%;
-    height: 100vh;
-    font-family: var(--font-family);
+  background-color: var(--card);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* min-width: 230px; */
+  width: 20%;
+  height: 100vh;
+  font-family: var(--font-family);
+}
+
+.closeButton {
+  display: none;
+}
+
+.sidenav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .companyname {
-    padding: 2px 0px 0px 50px;
-    cursor: pointer;
-    color: var(--sky-color);
+  padding: 2px 0px 0px 50px;
+  cursor: pointer;
+  color: var(--sky-color);
 }
 
 .firstCard {
-    padding: 20px 0px 0px 50px;
-    margin-bottom: 250px;
-    color: var(--black);
+  padding: 20px 0px 0px 50px;
+  margin-bottom: 250px;
+  color: var(--black);
 }
 
-.firstCard, p {
-    cursor: pointer;
+.firstCard,
+p {
+  cursor: pointer;
 }
 
 .secondCard {
-    margin: 0 10px;
-    padding: 15px 0px 20px 25px;
-    align-items: center;
-    background-color: var(--cardBackground);
-    color: var(--black);
+  margin: 0 10px;
+  padding: 15px 0px 20px 25px;
+  align-items: center;
+  background-color: var(--cardBackground);
+  color: var(--black);
 }
 
-.partpopper{
-    width: 29%;
-    height: 29%;
+.partpopper {
+  width: 29%;
+  height: 29%;
 }
 
-button{
-    padding: 8px;
-    border-radius: 5px;
-    background-color: var(--sky-color);
+button {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: var(--sky-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .side-nav {
+    display: none;
+  }
+  .side-nav.active {
+    display: block;
+    width: 50%;
+    position: absolute;
+  }
+  .closeButton {
+    display: block;
+    margin-right: 0.5rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+  /* .side-nav.inactive{
+    display: none;
+  } */
 }

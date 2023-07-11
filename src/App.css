@@ -1,15 +1,17 @@
 :root {
-    --sky-color: rgb(182, 247, 247);
-    --white: #fff;
-    --black:rgb(116, 129, 141);
-    --font-family: 'Itim', cursive;
-    --card: rgb(28, 24, 24);
-    --cardBackground: rgb(43, 39, 39)
+  --sky-color: rgb(182, 247, 247);
+  --white: #fff;
+  --black: rgb(116, 129, 141);
+  --font-family: "Itim", cursive;
+  --card: rgb(28, 24, 24);
+  --cardBackground: rgb(43, 39, 39);
 }
 .App {
   display: flex;
 }
 
-@media screen and(max-width) {
-  
+@media screen and (max-width:815px) {
+  .App {
+    flex-wrap: wrap;
+  }
 }

@@ -1,11 +1,13 @@
 .recentOrderCard {
-    /* display: flex; */
-    /* justify-content: center; */
     background-color: var(--card);
-    /* width: 565px; */
-    /* height: 314px; */
     border-radius: 5px;
     padding: 0.5rem 2rem;
     box-sizing: border-box;
     margin-top: 28px;
+}
+
+@media screen and (max-width: 815px) {
+  .recentOrderCard{
+    margin: 0.5rem 0;
+  }
 }

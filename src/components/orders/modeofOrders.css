@@ -6,10 +6,20 @@
 .moodeOfCardORder{
     display: flex;
     background-color: var(--card);
-    /* max-width: 82%; */
-    /* width: 119%; */
     border-radius: 1rem;
     box-sizing: border-box;
     padding: 0.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+    .orderCards{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .orderCards{
+        width: 100%;
+        margin: 0.5rem;
+    }
+}

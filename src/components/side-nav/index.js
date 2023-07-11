@@ -2,10 +2,13 @@ import React from "react";
 import "./side-nav.css";
 import partypopper from "../../assets/images/partypopper.svg";
 
-const SideNav = () => {
+const SideNav = ({ navActive, setNavActive }) => {
   return (
-    <div className="side-nav">
-      <h1 className="companyname">E.COM</h1>
+    <div className={`side-nav ${navActive}`}>
+      <div className="sidenav-header">
+        <h1 className="companyname">E.COM</h1>
+        <div className="closeButton" onClick={() => setNavActive("")}>❌</div>
+      </div>
       <div className="firstCard">
         <p>Dashboard</p>
         <p>Products</p>

@@ -4,7 +4,7 @@ import { TopProducts } from "./topProducts";
 import DATA from "../../data.json";
 import "./dashboard.css";
 
-const Dashboard = () => {
+const Dashboard = ({setNavActive}) => {
   const [items] = useState(DATA);
   const [totalSales, setTotalSales] = useState(0);
   const [totalEarnings, setTotalEarnings] = useState(0);
@@ -13,7 +13,9 @@ const Dashboard = () => {
   useEffect(() => {
     if (items.length !== 0) {
       let deItems = [...items];
-      let amounts = deItems.map((item) => item.amount * item.orders * item.stock);
+      let amounts = deItems.map(
+        (item) => item.amount * item.orders * item.stock
+      );
       console.log(amounts);
       let totalAmount = amounts.reduce((intVal, amount) => amount + intVal, 0);
       let earnings = deItems.map((item) => item.amount * item.orders);
@@ -26,15 +28,20 @@ const Dashboard = () => {
       setTotalSales(totalAmount);
       setTotalEarnings(totalEarning);
       setTotalOrders(totalOrder);
-
     }
-
   }, []);
   // totalSales();
   // console.log(totalSales);
   return (
-    <div className="dashboard">
-      <h1>Dashboard</h1>
+    <main className="dashboard">
+      <div className="header">
+        <h1>Dashboard</h1>
+        <div className="burger" onClick={() => setNavActive("active")}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <div className="sales">
         <div className="totalCards totalsales">
           <span>📈 TOTAL SALES</span>
@@ -54,7 +61,7 @@ const Dashboard = () => {
       </div>
       <AnalysticsEarning />
       <TopProducts items={items} />
-    </div>
+    </main>
   );
 };
 
