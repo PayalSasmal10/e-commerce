@@ -17,7 +17,7 @@ export const TopProducts = ({ items }) => {
         </thead>
         <tbody>
           {items.map((val, id) => {
-            if (val.orders > 20) {
+            if(val.orders > 20) {
               return (
                 <tr key={id}>
                   <td>

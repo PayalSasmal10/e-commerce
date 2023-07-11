@@ -9,3 +9,7 @@
 .App {
   display: flex;
 }
+
+@media screen and(max-width) {
+  
+}
