@@ -1,0 +1,111 @@
+import { render, screen } from "@testing-library/react"
+import Dashboard from "."
+
+jest.mock("../../data.json", () => {
+    return (
+        [
+            {   
+                "id": "1",
+                "productname" : "Nike Revolution 3",
+                "price": "$250",
+                "orders": "47",
+                "stock": "23",
+                "amount": "32560",
+                "imageURL": "https://static.nike.com/a/images/t_default/2cb90540-ae37-4b31-90ad-640987e21a6b/pegasus-40-road-running-shoes-0Z9lqN.png",
+                "month": "Jan",
+                "payment": "Online",
+                "date": "04/12/2023"
+            },
+            {
+                "id": "2",
+                "productname" : "Green Plain T-Shirt",
+                "price": "$79",
+                "orders": "98",
+                "stock": "07",
+                "amount": "2368",
+                "imageURL": "https://www.mydesignation.com/wp-content/uploads/2020/01/parrot-green-plain-tshirt-mydesignation-unisex-image.jpg",
+                "month": "Feb",
+                "payment": "Online",
+                "date": "01/12/2023"
+            },
+            {
+                "id": "3",
+                "productname" : "Nike Dunk Shoes",
+                "price": "$579",
+                "orders": "26",
+                "stock": "03",
+                "amount": "26987",
+                "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
+                "month": "Mar",
+                "payment": "Online",
+                "date": "01/14/2023"
+            },
+            {
+                "id": "4",
+                "productname" : "Blue T-Shirt",
+                "price": "$579",
+                "orders": "20",
+                "stock": "03",
+                "amount": "36987",
+                "imageURL": "https://img.freepik.com/free-vector/set-different-types-shirt-same-color_1308-51644.jpg?w=900&t=st=1689089185~exp=1689089785~hmac=db9a37f099f5b1ad2ebcab3131aec332c19b61cbb75b7297dda80824584a0867",
+                "month": "Apr",
+                "payment": "Online",
+                "date": "01/25/2023"
+            },
+            {
+                "id": "5",
+                "productname" : "Orange Hat",
+                "price": "$59",
+                "orders": "6",
+                "stock": "03",
+                "amount": "36987",
+                "imageURL": "https://m.media-amazon.com/images/I/61uxhWk2RhL._UX679_.jpg",
+                "month": "May",
+                "payment": "Store Order",
+                "date": "01/26/2023"
+            },
+            {
+                "id": "6",
+                "productname" : "Green Trousers",
+                "price": "$179",
+                "orders": "16",
+                "stock": "01",
+                "amount": "36987",
+                "imageURL": "https://rukminim2.flixcart.com/image/832/832/xif0q/trouser/y/5/r/-original-imagkrtpafpfrmjg.jpeg?q=70",
+                "month": "Jun",
+                "payment": "Store Order",
+                "date": "01/28/2023"
+            },
+            {
+                "id": "7",
+                "productname" : "Green Trousers",
+                "price": "$179",
+                "orders": "16",
+                "stock": "01",
+                "amount": "36987",
+                "imageURL": "https://m.media-amazon.com/images/I/61rLMYGKrNL._UX695_.jpg",
+                "month": "July",
+                "payment": "Store Order",
+                "date": "01/29/2023"
+            },
+            {
+                "id": "8",
+                "productname" : "Blue Heels",
+                "price": "$179",
+                "orders": "16",
+                "stock": "01",
+                "amount": "36987",
+                "imageURL": "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012101444-Blue-Indigo-1000012101444_01-2100.jpg",
+                "month": "Aug",
+                "payment": "Online",
+                "date": "01/28/2023"
+            }
+        ]
+    )
+})
+
+test("Dashboard component", () => {
+    render(<Dashboard />);
+    const header = screen.getByRole("heading", { name: /dashboard/i });
+    expect(header).toBeInTheDocument();
+})

@@ -10,21 +10,20 @@ const Dashboard = ({setNavActive}) => {
   const [totalEarnings, setTotalEarnings] = useState(0);
   const [totalOrders, setTotalOrders] = useState(0);
 
+  console.log("items", items);
+
   useEffect(() => {
     if (items.length !== 0) {
       let deItems = [...items];
       let amounts = deItems.map(
         (item) => item.amount * item.orders * item.stock
       );
-      console.log(amounts);
       let totalAmount = amounts.reduce((intVal, amount) => amount + intVal, 0);
       let earnings = deItems.map((item) => item.amount * item.orders);
       let totalEarning = earnings.reduce((initVal, earns) => initVal + earns);
       let orders = deItems.map((item) => item.orders * 1);
-      console.log(orders);
 
       let totalOrder = orders.reduce((initVal, item) => initVal + item);
-      // console.log(totalOrder);
       setTotalSales(totalAmount);
       setTotalEarnings(totalEarning);
       setTotalOrders(totalOrder);
